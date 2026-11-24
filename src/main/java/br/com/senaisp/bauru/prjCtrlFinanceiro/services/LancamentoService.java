@@ -33,6 +33,7 @@ public class LancamentoService {
 	            return null;
 	        }
 	        lancamentoBanco.setValor(lancamento.getValor());
+	        lancamentoBanco.setDataLancamento(lancamento.getDataLancamento());
 	        lancamentoBanco.setCategoria(lancamento.getCategoria());
 	        lancamentoBanco.setUsuario(lancamento.getUsuario());
 	        return repository.save(lancamentoBanco);
